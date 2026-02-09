@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# デイユースホテル専用検索サイト
 
-## Getting Started
+日帰りで利用できるホテルを簡単に検索・予約できるWebアプリケーション
 
-First, run the development server:
+## 🌟 主な機能
+
+- 🔍 **詳細検索** - エリア、価格、評価、設備で絞り込み
+- 🏨 **ホテル一覧** - 検索結果を分かりやすく表示
+- 🗺️ **地図表示** - ホテルの位置を地図上で確認
+- ⭐ **評価システム** - ユーザー評価を表示
+- 💰 **価格フィルター** - 予算に合わせて検索
+- 🎯 **設備フィルター** - Wi-Fi、デスク、バスタブなど
+- 🎨 **レスポンシブデザイン** - 全デバイス対応
+
+## 🛠️ 使用技術
+
+- **フレームワーク**: Next.js 15 (App Router)
+- **言語**: TypeScript
+- **スタイリング**: Tailwind CSS
+- **アイコン**: Lucide React
+- **地図**: (将来的にGoogle Maps API / Mapbox統合予定)
+
+## 🚀 セットアップ
 
 ```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# ビルド
+npm run build
+
+# 本番環境での起動
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+開発サーバーは [http://localhost:3000](http://localhost:3000) で起動します。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 プロジェクト構造
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+dayuse-hotel-search/
+├── app/
+│   ├── page.tsx          # メインページ
+│   ├── layout.tsx        # レイアウト
+│   └── globals.css       # グローバルスタイル
+├── components/
+│   ├── HotelCard.tsx     # ホテルカードコンポーネント
+│   ├── SearchFilter.tsx  # 検索フィルターコンポーネント
+│   └── MapView.tsx       # 地図表示コンポーネント
+└── public/               # 静的ファイル
+```
 
-## Learn More
+## 💡 今後の拡張予定
 
-To learn more about Next.js, take a look at the following resources:
+- Google Maps / Mapbox統合
+- ホテルAPI連携
+- 予約機能の実装
+- ユーザー認証
+- レビュー投稿機能
+- お気に入り保存
+- 予約履歴
+- メール通知
+- 決済システム連携
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 ユースケース
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **テレワーク** - 集中できる静かな空間
+- **休憩・仮眠** - 移動の合間のリフレッシュ
+- **待ち合わせ** - 快適な待機場所
+- **リフレッシュ** - 気分転換やリラックス
+- **荷物預け** - 観光の合間に荷物を置ける
 
-## Deploy on Vercel
+## 📄 ライセンス
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+© 2024 Inkrement Inc.
